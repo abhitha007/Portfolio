@@ -4,9 +4,31 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Abhishek Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+
+  <!-- SEO Title -->
+  <title>Abhishek Singh | Frontend Developer Portfolio</title>
+
+  <!-- SEO Meta Description -->
+  <meta name="description" content="Portfolio of Abhishek Singh - Frontend Developer skilled in HTML, CSS, JavaScript, React, Angular, Python, SQL, and Bootstrap. Explore my projects, resume, and services.">
+
+  <!-- SEO Keywords -->
+  <meta name="keywords" content="Abhishek Singh, frontend developer, web developer, portfolio, React developer, Angular developer, UI/UX, HTML CSS JavaScript, Bootstrap developer, Python, SQL, Java, Prayagraj, India">
+
+  <!-- Author -->
+  <meta name="author" content="Abhishek Singh">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:title" content="Abhishek Singh | Frontend Developer Portfolio">
+  <meta property="og:description" content="Frontend Developer skilled in React, Angular, JavaScript, and modern web technologies.">
+  <meta property="og:image" content="assets/img/profile/abhi.jpeg">
+  <meta property="og:url" content="https://your-portfolio-link.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abhishek Singh | Frontend Developer Portfolio">
+  <meta name="twitter:description" content="Explore my projects, skills, and experience in web development.">
+  <meta name="twitter:image" content="assets/img/profile/abhi.jpeg">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,7 +37,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,10 +50,8 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
+  * Template: FolioOne
+  * Customized by Abhishek Singh
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
@@ -41,12 +61,11 @@
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/logo.webp" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
+      <!-- Accessible Logo -->
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" aria-label="Main Navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About</a></li>
@@ -54,20 +73,21 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li class="dropdown"><a href="hire.html"><span>Hire Me</span></i></a></li>
+          <li><a href="hire.html">Hire Me</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></i>
       </nav>
 
       <div class="header-social-links">
-        <a href="https://x.com/abhi958041" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://github.com/abhitha007" class="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://www.instagram.com/whois_abhi007/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/abhishek-singh-680633282/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/abhi958041" class="twitter" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://github.com/abhitha007" class="github" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/whois_abhi007/" class="instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/abhishek-singh-680633282/" class="linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>
   </header>
+
 
   <main class="main">
 
@@ -560,17 +580,17 @@
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Abhishek</strong> <span>All Rights Reserved<br></span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/abhi958041"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://github.com/abhitha007"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/whois_abhi007/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/abhishek-singh-680633282/"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> & Developed By Abhishek Singh
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade </a> & Developed By Abhishek Singh
       </div>
     </div>
 
