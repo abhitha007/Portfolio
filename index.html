@@ -1,163 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">  
-  
-  <title>Abhishek Singh | Full Stack Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Abhishek Singh - Full Stack Developer, UI/UX Designer, and Web Developer. Explore my work, skills, resume, and contact details.">
-  <meta name="keywords" content="Abhishek Singh, Full Stack Developer, Web Developer, UI/UX Designer, Portfolio, Hire Web Developer, Frontend Developer, Backend Developer, Software Engineer">
-  <meta name="author" content="Abhishek Singh">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-         <!--<li><a href="portfolio.html">Portfolio</a></li>-->
-          <li><a href="contact.html">Contact</a></li>
-          <li class="dropdown"><a href="hire.html"><span>Hire Me</span></a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-       <div class="header-social-links d-flex gap-3">
-        <a href="https://x.com/abhi958041" class="twitter" aria-label="Abhishek on Twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://github.com/abhitha007" class="GitHub" aria-label="Abhishek on GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://www.instagram.com/whois_abhi007/" class="instagram" aria-label="Abhishek on Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/abhishek-singh-680633282/" class="linkedin" aria-label="Abhishek on LinkedIn"><i class="bi bi-linkedin"></i></a>
-      </div>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-6 order-1 order-lg-1">
-            <div class="hero-content">
-              <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Abhishek Singh</span></h1>
-              <h2 data-aos="fade-up" data-aos-delay="300">Creative <span class="typed" data-typed-items="UI/UX Designer, Web Developer, Full Stack Developer"></span></h2>
-              <p data-aos="fade-up" data-aos-delay="400">I’m a Full-Stack Developer with a love for coding, problem-solving, and turning ideas into reality.</p>
-              <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-                <a href="hire.html" class="btn btn-primary">View My Work</a>
-                <a href="contact.html" class="btn btn-outline">Get In Touch</a>
-              </div>
-              <div class="social-links text-center" data-aos="fade-up" data-aos-delay="600">
-                <a href="https://x.com/abhi958041"><i class="bi bi-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/abhishek-singh-680633282/"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/abhitha007"><i class="bi bi-github"></i></a>
-                <a href="https://www.instagram.com/whois_abhi007/"><i class="bi bi-instagram"></i></a>
-              </div>
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Abhishek Singh | Full Stack Developer Portfolio</title>
+      <meta name="description" content="Portfolio of Abhishek Singh - Full Stack Developer, UI/UX Designer, and Web Developer. Explore my work, skills, resume, and contact details.">
+      <meta name="keywords" content="Abhishek Singh, Full Stack Developer, Web Developer, UI/UX Designer, Portfolio, Hire Web Developer, Frontend Developer, Backend Developer, Software Engineer">
+      <meta name="author" content="Abhishek Singh">
+      <!-- Favicons -->
+      <link href="assets/img/favicon.png" rel="icon">
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com" rel="preconnect">
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Vendor CSS Files -->
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.17.0/devicon.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.17.0/devicon-colors.min.css">
+      <!-- Main CSS File -->
+      <link href="assets/css/main.css" rel="stylesheet">
+      <!-- =======================================================
+         * Template Name: FolioOne
+         * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
+         * Updated: Aug 23 2025 with Bootstrap v5.3.7
+         * Author: BootstrapMade.com
+         * License: https://bootstrapmade.com/license/
+         ======================================================== -->
+   </head>
+   <body class="index-page">
+      <header id="header" class="header d-flex align-items-center light-background sticky-top">
+         <div class="container position-relative d-flex align-items-center justify-content-between">
+            <nav id="navmenu" class="navmenu">
+               <ul>
+                  <li><a href="index.html" class="active">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="resume.html">Resume</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <!--<li><a href="portfolio.html">Portfolio</a></li>-->
+                  <li><a href="contact.html">Contact</a></li>
+                  <li class="dropdown"><a href="hire.html"><span>Hire Me</span></a></li>
+               </ul>
+               <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <div class="header-social-links d-flex gap-3">
+               <a href="https://x.com/abhi958041" class="twitter" aria-label="Abhishek on Twitter"><i class="bi bi-twitter-x"></i></a>
+               <a href="https://github.com/abhitha007" class="GitHub" aria-label="Abhishek on GitHub"><i class="bi bi-github"></i></a>
+               <a href="https://www.instagram.com/whois_abhi007/" class="instagram" aria-label="Abhishek on Instagram"><i class="bi bi-instagram"></i></a>
+               <a href="https://www.linkedin.com/in/abhishek-singh-680633282/" class="linkedin" aria-label="Abhishek on LinkedIn"><i class="bi bi-linkedin"></i></a>
             </div>
-          </div>
-          <div class="col-lg-6 order-2 order-lg-2">
-            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-              <div class="image-wrapper">
-                <img src="assets/img/profile/Gemini_Generated_Image_lpug6wlpug6wlpug.png" alt="Abhishek Singh - Full Stack Developer" class="img-fluid">
-                <div class="floating-elements">
-                  <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
-                    <i class="bi bi-palette"></i>
-                    <span>Design</span>
+         </div>
+      </header>
+      <main class="main">
+         <!-- Hero Section -->
+         <section id="hero" class="hero section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+               <div class="row gy-4 align-items-center">
+                  <div class="col-lg-6 order-1 order-lg-1">
+                     <div class="hero-content">
+                        <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Abhishek Singh</span></h1>
+                        <h2 data-aos="fade-up" data-aos-delay="300"> freelance <span class="typed" data-typed-items="UI/UX Designer, Web Developer, Full Stack Developer, Backend Developer"></span></h2>
+                        <p data-aos="fade-up" data-aos-delay="400">
+                           Crafting <strong>clean, scalable</strong> and <strong>high-performance</strong> web solutions.  
+                           Passionate about coding, I transform ideas into <strong>seamless digital experiences</strong>.
+                        </p>
+                        <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+                           <a href="hire.html" class="btn btn-primary">View My Work</a>
+                           <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+                        </div>
+                        <div id="techCarousel" class="carousel slide text-center" data-bs-ride="carousel" data-bs-interval="2000"
+                           data-aos="fade-up" data-aos-delay="600">
+                           <!-- indicators -->
+                           <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                           </div>
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <div class="d-flex justify-content-around flex-wrap align-items-center">
+                                    <div class="text-center m-2">
+                                       <i class="devicon-html5-plain colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">HTML5</p>
+                                    </div>
+                                    <div class="text-center m-2">
+                                       <i class="devicon-css3-plain colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">CSS3</p>
+                                    </div>
+                                    <div class="text-center m-2">
+                                       <i class="devicon-javascript-plain colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">JavaScript</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="d-flex justify-content-around flex-wrap align-items-center">
+                                    <div class="text-center m-2">
+                                       <i class="devicon-angularjs-plain colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">Angular</p>
+                                    </div>
+                                    <div class="text-center m-2">
+                                       <i class="devicon-react-original colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">React</p>
+                                    </div>
+                                    <div class="text-center m-2">
+                                       <i class="devicon-git-plain colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">Git</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="d-flex justify-content-around flex-wrap align-items-center">
+                                    <div class="text-center m-2">
+                                       <i class="devicon-java-plain colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">Java</p>
+                                    </div>
+                                    <div class="text-center m-2">
+                                       <i class="devicon-python-plain colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">Python</p>
+                                    </div>
+                                    <div class="text-center m-2">
+                                       <i class="devicon-github-plain colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">GitHub</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="d-flex justify-content-around flex-wrap align-items-center">
+                                    <div class="text-center m-2">
+                                       <i class="devicon-mysql-plain colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">MySQL</p>
+                                    </div>
+                                    <div class="text-center m-2">
+                                       <i class="devicon-bootstrap-plain colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">Bootstrap</p>
+                                    </div>
+                                    <div class="text-center m-2">
+                                       <i class="devicon-tailwindcss-plain colored fs-1"></i>
+                                       <p class="mt-2 mb-0 small">Tailwind</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- controls -->
+                           <!-- <button class="carousel-control-prev" type="button" data-bs-target="#techCarousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#techCarousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                              </button> -->
+                        </div>
+                     </div>
                   </div>
-                  <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
-                    <i class="bi bi-code-slash"></i>
-                    <span>Code</span>
+                  <div class="col-lg-6 order-2 order-lg-2">
+                     <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="image-wrapper">
+                           <img src="assets/img/profile/Gemini_Generated_Image_lpug6wlpug6wlpug.png" alt="Abhishek Singh - Full Stack Developer" class="img-fluid">
+                           <div class="floating-elements">
+                              <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
+                                 <i class="bi bi-palette"></i>
+                                 <span>Design</span>
+                              </div>
+                              <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
+                                 <i class="bi bi-code-slash"></i>
+                                 <span>Code</span>
+                              </div>
+                              <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
+                                 <i class="bi bi-lightbulb"></i>
+                                 <span>Ideas</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
-                    <i class="bi bi-lightbulb"></i>
-                    <span>Ideas</span>
-                  </div>
-                </div>
-              </div>
+               </div>
             </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Hero Section -->
-
-  </main>
-
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Abhishek Singh</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/abhishek-singh-680633282/"><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits text-center">
-         Designed & Developed By Abhishek Singh
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
+         </section>
+         <!-- /Hero Section -->
+      </main>
+      <footer id="footer" class="footer">
+         <div class="container">
+            <div class="copyright text-center">
+               <p>© <span>Copyright</span> <strong class="px-1 sitename">Abhishek Singh</strong> <span>All Rights Reserved</span></p>
+            </div>
+            <div class="social-links d-flex justify-content-center">
+               <a href="https://x.com/abhi958041"><i class="bi bi-twitter-x"></i></a>
+               <a href="https://github.com/abhitha007"><i class="bi bi-github"></i></a>
+               <a href=" https://www.instagram.com/whois_abhi007/"><i class="bi bi-instagram"></i></a>
+               <a href="https://www.linkedin.com/in/abhishek-singh-680633282/"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <div class="credits text-center">
+               Designed & Developed By Abhishek Singh
+            </div>
+         </div>
+      </footer>
+      <!-- Scroll Top -->
+      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
+      <!-- Preloader -->
+      <div id="preloader"></div>
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/typed.js/typed.umd.js"></script>
+      <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', function () {
+           var el = document.getElementById('techCarousel');
+           if (el) {
+             // Destroy old instance if already exists
+             var existing = bootstrap.Carousel.getInstance(el);
+             if (existing) {
+               existing.dispose();
+             }
+             // Initialize fresh carousel
+             new bootstrap.Carousel(el, {
+               interval: 1000,
+               ride: true,   // auto start
+               pause: false, // hover pe bhi na ruke
+               wrap: true    // last ke baad first pe loop kare
+             });
+           }
+         });
+      </script>
+      <!-- Main JS File -->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
