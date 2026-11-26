@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 2. Typing effect (edit the roles here)
       const typingEl = document.getElementById("typing-text");
-      const roles = ["Software Engineer (Angular)", "Aspiring DevOps Engineer", "AWS & Kubernetes Learner"];
+      const roles = ["Software Engineer (Angular)", "Frontend Engineer moving into DevOps", "Kubernetes & AWS Learner"];
       let r = 0, c = 0, del = false;
       (function type() {
         const word = roles[r];
@@ -276,7 +276,7 @@ resource "aws_subnet" "public" {
       fetch("https://api.github.com/users/abhitha007")
         .then(r => r.ok ? r.json() : Promise.reject())
         .then(d => document.querySelector("#about .row.g-3").insertAdjacentHTML("afterend",
-          `<p class="small text-muted mt-3 mb-0"><i class="fa-brands fa-github me-1"></i>GitHub: <strong>${d.public_repos}</strong> public repos, <strong>${d.followers}</strong> followers</p>`))
+          `<p class="small text-muted mt-3 mb-0"><i class="fa-brands fa-github me-1"></i>GitHub: <strong>${d.public_repos}</strong> public repositories</p>`))
         .catch(() => {});
 
       // ===== ANIMATIONS =====
