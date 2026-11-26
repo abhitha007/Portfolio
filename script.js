@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 2. Typing effect (edit the roles here)
       const typingEl = document.getElementById("typing-text");
-      const roles = ["Software Engineer", "Frontend Developer", "Cloud & DevOps Learner"];
+      const roles = ["Software Engineer (Angular)", "Aspiring DevOps Engineer", "AWS & Kubernetes Learner"];
       let r = 0, c = 0, del = false;
       (function type() {
         const word = roles[r];
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         icon.className = t === "dark" ? "fa-solid fa-sun text-warning" : "fa-solid fa-moon text-primary";
         try { localStorage.setItem("portfolio-theme", t); } catch (e) {}
       };
-      try { setTheme(localStorage.getItem("portfolio-theme") === "dark" ? "dark" : "light"); } catch (e) { setTheme("light"); }
+      setTheme("light");
       document.getElementById("themeToggle").addEventListener("click", () => setTheme(html.getAttribute("data-bs-theme") === "dark" ? "light" : "dark"));
 
       // 4. Scroll reveal, active nav link, back to top
@@ -51,15 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.forEach(l => l.addEventListener("click", () => { if (menu.classList.contains("show")) bootstrap.Collapse.getOrCreateInstance(menu).hide(); }));
 
       // 5. Animated stat counters (supports decimals and a suffix)
-      const start = new Date(2025, 1, 1);
-      const years = Math.floor((Date.now() - start.getTime()) / (365.2425 * 86400000) * 10) / 10;
-      document.getElementById("experienceCount").dataset.count = years.toFixed(1);
       let counted = false;
       const about = document.getElementById("about");
       new IntersectionObserver((entries) => {
         if (!entries[0].isIntersecting || counted) return;
         counted = true;
-        document.querySelectorAll(".stat-number[data-count]").forEach(el => {
+        document.querySelectorAll(".stat-number").forEach(el => {
           const target = parseFloat(el.dataset.count), suffix = el.dataset.suffix || "";
           const decimals = String(el.dataset.count).includes(".") ? 1 : 0;
           let n = 0;
@@ -83,7 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         document.getElementById("demoModalTitle").textContent = btn.dataset.title;
         document.getElementById("modalProjectDesc").textContent = btn.dataset.desc;
-        document.getElementById("modalPrivacy").hidden = btn.dataset.private !== "true";
         modal.show();
       }));
 
@@ -91,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const EMAILJS_PUBLIC_KEY = "JrOAAHpENtKozvdJ9";
       const EMAILJS_SERVICE_ID = "service_tg4ys11";
       const EMAILJS_TEMPLATE_ID = "template_5jh3tw3";
-      if (window.emailjs) emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+      emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
       const form = document.getElementById("contactForm");
       const sendBtn = document.getElementById("sendBtn");
@@ -100,7 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         if (!form.checkValidity()) { form.classList.add("was-validated"); return; }
 
-          if (!window.emailjs) { statusEl.textContent = "Contact service unavailable. Please email me directly."; return; }
           const params = {
           user_name: document.getElementById("name").value,
           user_email: document.getElementById("email").value,
@@ -154,7 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
         s.setProperty("--primary-glow", rgba(a, .4)); s.setProperty("--accent-soft", rgba(a, .12));
         try { localStorage.setItem("portfolio-accent", i); } catch (e) {}
       };
-      if (!Number.isInteger(ai) || ai < 0 || ai >= accents.length) ai = 0;
       applyAccent(ai);
       document.getElementById("accentToggle").addEventListener("click", () => { ai = (ai + 1) % accents.length; applyAccent(ai); });
 
@@ -200,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll(".filter-btn").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-pressed", "false"); });
         btn.classList.add("active"); btn.setAttribute("aria-pressed", "true");
         const f = btn.dataset.filter;
-        document.querySelectorAll(".project-item").forEach(it => it.classList.toggle("hide", f !== "all" && !it.dataset.cat.split(" ").includes(f)));
+        document.querySelectorAll(".project-item").forEach(it => it.classList.toggle("hide", f !== "all" && it.dataset.cat !== f));
       }));
       if (fine && !reduce) {
         document.querySelectorAll(".project-card").forEach(card => {
@@ -236,6 +230,9 @@ CMD ["nginx", "-g", "daemon off;"]`,
   stages {
     stage('Build') {
       steps { sh 'docker build -t $IMAGE .' }
+    }
+    stage('ECR Login') {
+      steps { sh 'aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin $REGISTRY' }
     }
     stage('Push') {
       steps { sh 'docker push $IMAGE' }
@@ -319,7 +316,7 @@ resource "aws_subnet" "public" {
       }));
 
       // 18. Tech marquee strip
-      const techs = [["fa-brands fa-aws", "AWS"], ["fa-solid fa-layer-group", "Terraform"], ["fa-brands fa-docker", "Docker"], ["fa-solid fa-dharmachakra", "Kubernetes"], ["fa-brands fa-jenkins", "Jenkins"], ["fa-brands fa-github", "GitHub Actions"], ["fa-brands fa-linux", "Linux"], ["fa-brands fa-git-alt", "Git"], ["fa-solid fa-chart-line", "Prometheus & Grafana"], ["fa-brands fa-angular", "Angular"], ["fa-brands fa-js", "JavaScript"]];
+      const techs = [["fa-brands fa-aws", "AWS"], ["fa-solid fa-layer-group", "Terraform"], ["fa-brands fa-docker", "Docker"], ["fa-solid fa-dharmachakra", "Kubernetes"], ["fa-brands fa-jenkins", "Jenkins"], ["fa-brands fa-github", "GitHub Actions"], ["fa-brands fa-linux", "Linux"], ["fa-brands fa-git-alt", "Git"], ["fa-solid fa-chart-line", "Prometheus & Grafana"], ["fa-brands fa-python", "Python"], ["fa-brands fa-angular", "Angular"], ["fa-brands fa-js", "JavaScript"]];
       const row = techs.map(([c, t]) => `<span><i class="${c} text-accent"></i>${t}</span>`).join("");
       document.getElementById("marqueeTrack").innerHTML = row + row;
 

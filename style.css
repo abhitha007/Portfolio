@@ -156,7 +156,7 @@
     /* avatar: floating, spinning ring and orbiting tech icons */
     .avatar-wrapper { position: relative; background: none; animation: float 6s ease-in-out infinite; }
     .avatar-wrapper::before { content: ""; position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(var(--primary-color), #22d3ee, transparent 60%, var(--primary-color)); animation: spin 8s linear infinite; }
-    .avatar-img { position: relative; }
+    .avatar-img { position: relative; object-position: center 12%; }
     .orbit { --r: calc(min(310px, 70vw) / 2 + 44px); position: absolute; inset: 0; animation: spin 26s linear infinite; pointer-events: none; }
     .chip { position: absolute; top: 50%; left: 50%; width: 0; height: 0; transform: rotate(var(--a)) translateX(var(--r)); }
     .chip > span { position: absolute; width: 46px; height: 46px; margin: -23px; display: grid; place-items: center; border-radius: 14px; background: var(--bg-glass); border: 1px solid var(--border-color); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); box-shadow: var(--card-shadow); transform: rotate(calc(-1 * var(--a))); }
@@ -213,3 +213,8 @@
       .orbit, .chip > span > i, .avatar-wrapper, .avatar-wrapper::before, .marquee-track, .hero-name .char, .progress-bar::after, .timeline-dot, .project-item.pop, .blob { animation: none !important; }
       .title-underline, .timeline::before { transform: none; transition: none; }
     }
+    /* skill cards */
+    .skill-card { text-align: left; }
+    .skill-card:hover { transform: translateY(-6px); border-color: var(--primary-color); box-shadow: var(--glow-box); }
+    .skill-card-icon { width: 50px; height: 50px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--primary-color); background: var(--accent-soft); margin-bottom: 16px; }
+    .skill-card-tag { display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .3px; padding: 3px 10px; border-radius: 50px; color: var(--primary-color); background: var(--accent-soft); }
